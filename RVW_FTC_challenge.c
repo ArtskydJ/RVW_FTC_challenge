@@ -28,8 +28,6 @@ Robot:	Gyro ScissorBot
 Mode:	CS2N Mode
 Start:	Start Point 1
 
-HKEY_CLASSES_ROOT\vdsp
-
 Do not move the robot at all from it's starting position.
 */
 
@@ -91,29 +89,3 @@ task main()
 
 	while(1==1) {}
 	}
-
-/* BUGS...
-LIFT_READY was not working correctly, triggered too soon; maybe working now.
-
-
-still too far right 2nd pole
-
-DO...
-[test...]
-
-
-DONE...
-
-*/
-
-
-
-/* --LINE 38--
-
-	auto(CMP_2,	450,	FULL,	NEW_SH,	DRIV_READY,	PID);	//Turn to align with field
-	auto(STR,	EAST,	9000,	NEW_SH,	DRIV_READY,	NEXT);	//Forward + Grab
-	auto(STR,	EAST,	200,	NEW_OP,	DRIV_READY,	NEXT);	//Forward + Drop
-	auto(STR,	EAST,	8000,	NEW_SH,	DRIV_READY,	NEXT);	//Forward + Grab
-	auto(SPD,	0,		0,		NEW_SH,	TIME_LIMIT,	500);	//Stop
-	auto(STR,	EAST,	-3000,	NEW_SH,	DRIV_READY,	NEXT);	//Reverse
-*/
